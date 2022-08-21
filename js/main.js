@@ -1,3 +1,5 @@
+//header menu
+
 const btnMenu = document.querySelector('.header__btn-menu');
 const menu = document.querySelector('.header__nav');
 
@@ -7,6 +9,8 @@ function toggleMobileMenu() {
 }
 
 btnMenu.addEventListener('click', toggleMobileMenu);
+
+//swiper
 
 const swiper = new Swiper('.swiper', {
     slidesPerView: "auto",
@@ -24,6 +28,8 @@ const swiper = new Swiper('.swiper', {
     },
 });
 
+//accordion
+
 var acc = document.getElementsByClassName("accordion");
 var i;
 
@@ -37,4 +43,23 @@ for (i = 0; i < acc.length; i++) {
             panel.style.maxHeight = panel.scrollHeight + "px";
         }
     });
+}
+
+//to top button
+
+var toTopButton = document.getElementById("toTopBtn");
+
+window.onscroll = function () { scrollFunction() };
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        toTopButton.style.display = "block";
+    } else {
+        toTopButton.style.display = "none";
+    }
+}
+
+function topFunction() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
 }
