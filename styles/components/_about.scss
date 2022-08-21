@@ -1,0 +1,105 @@
+@import '../common/vars';
+
+.about {
+    padding: 29px 0;
+    background-color: $white-color;
+
+    & h2 {
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: 84px;
+
+        @include b(tablet) {
+            margin-bottom: 25px;
+        }
+    }
+
+    &__body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+
+        @include b(tablet) {
+            position: static;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        & img {
+            max-width: 449px;
+
+            @include b(mobile) {
+                display: none;
+            }
+        }
+    }
+
+    &__step {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+        @include b(tablet) {
+            position: static;
+        }
+
+        &--first {
+            top: -43px;
+            left: 32px;
+        }
+
+        &--second {
+            top: 115px;
+            right: 57px;
+            align-items: flex-start;
+        }
+
+        &--third {
+            left: 55px;
+            bottom: 140px;
+        }
+
+        & img {
+            @include b(tablet) {
+                display: none;
+            }
+        }
+    }
+
+    &__wrap {
+        width: 240px;
+        padding: 16px 16px 21px;
+        margin-bottom: 25px;
+        border: 1px solid $alice-blue;
+        background-color: $white-color;
+        border-radius: 24px;
+        box-shadow: 0 4px 7px rgba(222, 234, 249, 0.59);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        & p {
+            line-height: 1.5;
+            letter-spacing: .15px;
+            text-align: center;
+        }
+    }
+
+    &__number {
+        background-color: $secondary-color;
+        width: 36px;
+        height: 36px;
+        border-radius: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 24px;
+
+        & span {
+            color: $white-color;
+        }
+    }
+}

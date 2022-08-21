@@ -1,0 +1,56 @@
+@import '../common/vars';
+
+.footer {
+    padding: 24px 0;
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include b(mobile-sm) {
+            flex-direction: column;
+        }
+    }
+
+    &__logo {
+        width: 100%;
+
+        &-box {
+            max-width: 67px;
+
+            @include b(mobile-sm) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0 -16px;
+
+        @include b(mobile-sm) {
+            flex-direction: column;
+        }
+
+        &-item {
+            padding: 0px 16px;
+
+            @include b(mobile-sm) {
+                padding: 10px 16px;
+            }
+        }
+
+        &-link {
+            font-size: 12px;
+            line-height: 1.6;
+            letter-spacing: 0.15px;
+
+            &:hover {
+                color: $btn-color;
+            }
+        }
+    }
+}

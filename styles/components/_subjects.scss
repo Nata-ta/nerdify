@@ -1,0 +1,28 @@
+@import '../common/vars';
+
+.subjects {
+    padding: 40px 0 60px;
+
+    &__title {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 10px;
+        color: $auro-metal-saurus-color;
+        margin-bottom: 35px;
+    }
+
+    &__list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: -9px;
+
+        &-item {
+            padding: 9px;
+        }
+    }
+
+    &__link {
+        display: block;
+    }
+}

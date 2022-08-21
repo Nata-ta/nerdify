@@ -1,0 +1,39 @@
+@import './vars';
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: $main-ff;
+    font-size: $main-fz;
+    line-height: $main-lh;
+    font-weight: $main-fw;
+    padding: 18px 37px;
+    cursor: pointer;
+    background-color: $btn-color;
+    color: $white-color;
+    border: 1px solid $btn-color;
+    border-radius: 30px;
+    transition: $trs;
+
+    &:hover {
+        border-color: $btn-color;
+        color: $btn-color;
+        background-color: transparent;
+    }
+
+    &--ghost {
+        border: 1px solid $btn-color;
+        border-radius: 24px;
+        color: $btn-color;
+        background-color: transparent;
+        font-size: 14px;
+        padding: 8px 15px;
+
+        &:hover {
+            color: $white-color;
+            background-color: $btn-color;
+        }
+    }
+}

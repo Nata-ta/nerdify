@@ -1,0 +1,52 @@
+@import '../common/vars';
+
+.benefits {
+    padding: 50px 0 100px;
+    background-color: $white-color;
+
+    @include b(mobile) {
+        padding: 25px 0 50px;
+    }
+
+    & h2 {
+        margin-bottom: 40px;
+        font-size: 24px;
+        line-height: 1.3;
+        text-align: center;
+    }
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: -10px -15px;
+
+        @include b(mobile) {
+            flex-direction: column;
+        }
+    }
+
+    &__card {
+        padding: 10px 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        & svg {
+            max-width: 24px;
+            margin-bottom: 20px;
+        }
+
+        & h3 {
+            font-size: 20px;
+            margin-bottom: 12px;
+        }
+
+        & p {
+            font-size: 12px;
+            line-height: 2.6;
+            text-align: center;
+        }
+    }
+}

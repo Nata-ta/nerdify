@@ -1,0 +1,64 @@
+@import './vars';
+
+@font-face {
+    font-family: "Roboto";
+    src: url("../fonts/Roboto-Regular.woff2") format("woff2"),
+        url("../fonts/Roboto-Regular.woff") format("woff");
+    font-style: normal;
+    font-weight: 400;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $main-ff;
+    font-size: $main-fz;
+    line-height: $main-lh;
+    font-weight: $main-fw;
+    color: $main-color;
+    margin: 0;
+    min-width: 320px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol {
+    margin: 0;
+}
+
+ul,
+ol {
+    list-style: none;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: $main-color;
+    transition: $trs;
+}
+
+.container {
+    max-width: 1080px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
